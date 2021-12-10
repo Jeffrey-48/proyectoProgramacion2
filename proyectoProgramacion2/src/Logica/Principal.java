@@ -13,7 +13,7 @@ public class Principal {
 	}
 
 	private void iniciar() {
-		CreacionCliente estudiantes = new CreacionCliente();
+		CreacionEstudiante estudiantes = new CreacionEstudiante();
 		this.estudiantes=estudiantes.getEstudiantesInscritos();
 	}
 	

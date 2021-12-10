@@ -11,11 +11,11 @@ import modelo.Estudiante;
  * @author braya
  *
  */
-public class CreacionCliente {
+public class CreacionEstudiante {
 
 	public ArrayList<Estudiante> estudiantesInscritos;
 
-	public CreacionCliente() {
+	public CreacionEstudiante() {
 		estudiantesInscritos = new ArrayList<>();
 		crearEstudiantes();
 	}
