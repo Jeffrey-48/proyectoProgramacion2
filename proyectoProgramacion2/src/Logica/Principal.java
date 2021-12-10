@@ -84,6 +84,7 @@ public class Principal {
 				this.salon.get(i).setMisEstudiantes(estudiantesSalon5);
 			}
 		}
+		
 	}
 
 	private void llenarPersonas(ArrayList<Estudiante> estudiantes2, ArrayList<Profesor> profesor2) {
