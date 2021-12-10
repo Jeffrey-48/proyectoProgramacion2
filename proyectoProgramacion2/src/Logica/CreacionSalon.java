@@ -8,20 +8,22 @@ import java.util.ArrayList;
 import modelo.Facultad;
 import modelo.Salon;
 
-/**
- * @author braya
- *
- */
 public class CreacionSalon {
 	
 	public ArrayList<Salon> misSalones;
 	public Facultad miFacultad;
 	
+	/**
+	 * Constructor de la clase
+	 */
 	public CreacionSalon() {
 		misSalones = new ArrayList<Salon>();
 		crearSalones();
 	}
 	
+	/**
+	 * Metodo usado para crear los salones y agregarlos a un ArrayList
+	 */
 	public void crearSalones() {
 		Salon s1 = new Salon("Salon01", "Facultad de ingenieria piso1", 1, null, null, null,null);
 		Salon s2 = new Salon("Salon100", "Facultad de medicina piso1", 100, null, null, null,null);

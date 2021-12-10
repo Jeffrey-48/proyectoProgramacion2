@@ -49,22 +49,6 @@ public class Estudiante extends Persona {
 		this.misCursos = misCursos;
 	}
 
-	public ArrayList<Salon> getMisSalones() {
-		return misSalones;
-	}
-
-	public void setMisSalones(ArrayList<Salon> misSalones) {
-		this.misSalones = misSalones;
-	}
-
-	public ArrayList<Curso> getMisCursos() {
-		return misCursos;
-	}
-
-	public void setMisCursos(ArrayList<Curso> misCursos) {
-		this.misCursos = misCursos;
-	}
-
 	/**
 	 * @return the semestre
 	 */
@@ -91,6 +75,34 @@ public class Estudiante extends Persona {
 	 */
 	public void setCodigoEstudiante(int codigoEstudiante) {
 		this.codigoEstudiante = codigoEstudiante;
+	}
+
+	/**
+	 * @return the misSalones
+	 */
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	/**
+	 * @param misSalones the misSalones to set
+	 */
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
+	}
+
+	/**
+	 * @return the misCursos
+	 */
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	/**
+	 * @param misCursos the misCursos to set
+	 */
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
 	}
 
 	@Override

@@ -21,28 +21,50 @@ public class Facultad extends Edificacion {
 
 	}
 
-	public ArrayList<Programa> getMisProgramas() {
-		return misProgramas;
-	}
-
-	public void setMisProgramas(ArrayList<Programa> misProgramas) {
-		this.misProgramas = misProgramas;
-	}
-
-	public ArrayList<Salon> getMisSalones() {
-		return misSalones;
-	}
-
-	public void setMisSalones(ArrayList<Salon> misSalones) {
-		this.misSalones = misSalones;
-	}
-
+	/**
+	 * 
+	 * @param nombre
+	 * @param numeroProgramas
+	 * @param misProgramas
+	 * @param misSalones
+	 * @param metrosCuadrados
+	 * @param numeroPisos
+	 * @param numeroSalones
+	 */
 	public Facultad(String nombre, int numeroProgramas, ArrayList<Programa> misProgramas, ArrayList<Salon> misSalones,
 			double metrosCuadrados, int numeroPisos, int numeroSalones) {
 		super(metrosCuadrados, numeroPisos, numeroSalones);
 		this.nombre = nombre;
 		this.numeroProgramas = numeroProgramas;
 		this.misProgramas = misProgramas;
+		this.misSalones = misSalones;
+	}	
+
+	/**
+	 * @return the misProgramas
+	 */
+	public ArrayList<Programa> getMisProgramas() {
+		return misProgramas;
+	}
+
+	/**
+	 * @param misProgramas the misProgramas to set
+	 */
+	public void setMisProgramas(ArrayList<Programa> misProgramas) {
+		this.misProgramas = misProgramas;
+	}
+
+	/**
+	 * @return the misSalones
+	 */
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	/**
+	 * @param misSalones the misSalones to set
+	 */
+	public void setMisSalones(ArrayList<Salon> misSalones) {
 		this.misSalones = misSalones;
 	}
 

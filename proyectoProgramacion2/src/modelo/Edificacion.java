@@ -10,6 +10,12 @@ public class Edificacion {
 		super();
 	}
 
+	/**
+	 * 
+	 * @param metrosCuadrados
+	 * @param numeroPisos
+	 * @param numeroSalones
+	 */
 	public Edificacion(double metrosCuadrados, int numeroPisos, int numeroSalones) {
 		super();
 		this.metrosCuadrados = metrosCuadrados;
@@ -17,26 +23,44 @@ public class Edificacion {
 		this.numeroSalones = numeroSalones;
 	}
 
+	/**
+	 * @return the metrosCuadrados
+	 */
 	public double getMetrosCuadrados() {
 		return metrosCuadrados;
 	}
 
+	/**
+	 * @param metrosCuadrados the metrosCuadrados to set
+	 */
 	public void setMetrosCuadrados(double metrosCuadrados) {
 		this.metrosCuadrados = metrosCuadrados;
 	}
 
+	/**
+	 * @return the numeroPisos
+	 */
 	public int getNumeroPisos() {
 		return numeroPisos;
 	}
 
+	/**
+	 * @param numeroPisos the numeroPisos to set
+	 */
 	public void setNumeroPisos(int numeroPisos) {
 		this.numeroPisos = numeroPisos;
 	}
 
+	/**
+	 * @return the numeroSalones
+	 */
 	public int getNumeroSalones() {
 		return numeroSalones;
 	}
 
+	/**
+	 * @param numeroSalones the numeroSalones to set
+	 */
 	public void setNumeroSalones(int numeroSalones) {
 		this.numeroSalones = numeroSalones;
 	}
@@ -46,7 +70,8 @@ public class Edificacion {
 		return "Edificacion [metrosCuadrados=" + metrosCuadrados + ", numeroPisos=" + numeroPisos + ", numeroSalones="
 				+ numeroSalones + "]";
 	}
-	
+
+		
 	
 
 }

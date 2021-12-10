@@ -34,52 +34,88 @@ public class Curso {
 		this.misEstudiantes = misEstudiantes;
 	}
 
-	public ArrayList<Profesor> getMisProfesores() {
-		return misProfesores;
-	}
-
-	public void setMisProfesores(ArrayList<Profesor> misProfesores) {
-		this.misProfesores = misProfesores;
-	}
-
-	public ArrayList<Estudiante> getMisEstudiantes() {
-		return misEstudiantes;
-	}
-
-	public void setMisEstudiantes(ArrayList<Estudiante> misEstudiantes) {
-		this.misEstudiantes = misEstudiantes;
-	}
-
-	public ArrayList<Salon> getMisSalones() {
-		return misSalones;
-	}
-
-	public void setMisSalones(ArrayList<Salon> misSalones) {
-		this.misSalones = misSalones;
-	}
-
+	/**
+	 * @return the nombre
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+	/**
+	 * @param nombre the nombre to set
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * @return the creditos
+	 */
 	public int getCreditos() {
 		return creditos;
 	}
 
+	/**
+	 * @param creditos the creditos to set
+	 */
 	public void setCreditos(int creditos) {
 		this.creditos = creditos;
 	}
 
+	/**
+	 * @return the codigo
+	 */
 	public String getCodigo() {
 		return codigo;
 	}
 
+	/**
+	 * @param codigo the codigo to set
+	 */
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
+	}
+
+	/**
+	 * @return the misSalones
+	 */
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	/**
+	 * @param misSalones the misSalones to set
+	 */
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
+	}
+
+	/**
+	 * @return the misProfesores
+	 */
+	public ArrayList<Profesor> getMisProfesores() {
+		return misProfesores;
+	}
+
+	/**
+	 * @param misProfesores the misProfesores to set
+	 */
+	public void setMisProfesores(ArrayList<Profesor> misProfesores) {
+		this.misProfesores = misProfesores;
+	}
+
+	/**
+	 * @return the misEstudiantes
+	 */
+	public ArrayList<Estudiante> getMisEstudiantes() {
+		return misEstudiantes;
+	}
+
+	/**
+	 * @param misEstudiantes the misEstudiantes to set
+	 */
+	public void setMisEstudiantes(ArrayList<Estudiante> misEstudiantes) {
+		this.misEstudiantes = misEstudiantes;
 	}
 
 	@Override
@@ -87,5 +123,8 @@ public class Curso {
 		return "Curso [nombre=" + nombre + ", creditos=" + creditos + ", codigo=" + codigo + ", misSalones="
 				+ misSalones + ", misProfesores=" + misProfesores + ", misEstudiantes=" + misEstudiantes + "]";
 	}
+
+
+	
 
 }

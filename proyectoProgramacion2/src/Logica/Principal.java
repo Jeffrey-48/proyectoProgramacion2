@@ -1,8 +1,6 @@
 package Logica;
 
 import java.util.ArrayList;
-import java.util.List;
-
 import modelo.Estudiante;
 import modelo.Facultad;
 import modelo.Persona;
@@ -25,6 +23,9 @@ public class Principal {
 
 	}
 
+	/**
+	 * Metodo usado para iniciar los metodos 
+	 */
 	private void iniciar() {
 		CreacionEstudiante estudiantes = new CreacionEstudiante();
 		this.estudiantes = estudiantes.getEstudiantesInscritos();
@@ -41,6 +42,9 @@ public class Principal {
 		System.out.println(this.salon.toString());
 	}
 
+	/**
+	 * Metodo para llenar las diferentes listas usadas en el proyecto
+	 */
 	private void llenarListas() {
 		for (int i = 0; i < this.salon.size(); i++) {
 			if (this.salon.get(i).getNombre().equals("Salon01")) {
@@ -87,6 +91,11 @@ public class Principal {
 		
 	}
 
+	/**
+	 * 
+	 * @param estudiantes2
+	 * @param profesor2
+	 */
 	private void llenarPersonas(ArrayList<Estudiante> estudiantes2, ArrayList<Profesor> profesor2) {
 		personas = new ArrayList<>();
 		for (int i = 0; i < estudiantes2.size(); i++) {

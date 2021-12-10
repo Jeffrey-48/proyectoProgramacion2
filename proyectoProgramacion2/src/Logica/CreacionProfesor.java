@@ -7,20 +7,21 @@ import java.util.ArrayList;
 
 import modelo.Profesor;
 
-/**
- * @author braya
- *
- */
 public class CreacionProfesor {
 
 	public ArrayList<Profesor> misProfesores;
 	
-
+	/**
+	 * Constructor de la clase
+	 */
 	public CreacionProfesor() {
 		misProfesores = new ArrayList<Profesor>();
 		crearProfesores();
 	}
 	
+	/**
+	 * Metodo usado para crear profesores y agregarlos a un ArrayList
+	 */
 	public void crearProfesores() {
 		Profesor p1 = new Profesor("Alex", "Vargas", "alex@gmail.com", "Barrio villa liliana", "01","3218759021" , "AB", "+", "23/08/1990","Masculino" ,"Profesor" , "Calculo", null, null);
 		Profesor p2 = new Profesor("Maria", "Castro", "castroMaria@gmail.com", "Barrio las Acacias", "02","3218329045" , "0", "+", "03/11/1991","Femenino" ,"Profesor" , "Historia", null, null);

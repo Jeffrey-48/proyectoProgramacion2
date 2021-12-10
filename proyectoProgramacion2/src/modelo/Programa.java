@@ -5,10 +5,6 @@ package modelo;
 
 import java.util.ArrayList;
 
-/**
- * @author braya
- *
- */
 public class Programa {
 	
 	public String nombre;
@@ -16,12 +12,6 @@ public class Programa {
 	public int numeroEstudiantesRegistrados;
 	public ArrayList<Curso> misCursos;
 	
-	/**
-	 * @param nombre
-	 * @param creditos
-	 * @param numeroEstudiantesRegistrados
-	 */
-
 	public Programa() {
 		
 	}
@@ -41,15 +31,6 @@ public class Programa {
 	}
 	
 	
-
-	public ArrayList<Curso> getMisCursos() {
-		return misCursos;
-	}
-
-	public void setMisCursos(ArrayList<Curso> misCursos) {
-		this.misCursos = misCursos;
-	}
-
 	/**
 	 * @return the nombre
 	 */
@@ -90,6 +71,20 @@ public class Programa {
 	 */
 	public void setNumeroEstudiantesRegistrados(int numeroEstudiantesRegistrados) {
 		this.numeroEstudiantesRegistrados = numeroEstudiantesRegistrados;
+	}
+
+	/**
+	 * @return the misCursos
+	 */
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	/**
+	 * @param misCursos the misCursos to set
+	 */
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
 	}
 
 	@Override

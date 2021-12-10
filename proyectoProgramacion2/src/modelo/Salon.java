@@ -37,60 +37,102 @@ public class Salon extends Edificacion {
 		this.miFacultad = miFacultad;
 	}
 
-	public ArrayList<Curso> getMisCursos() {
-		return misCursos;
-	}
-
-	public void setMisCursos(ArrayList<Curso> misCursos) {
-		this.misCursos = misCursos;
-	}
-
-	public ArrayList<Profesor> getMisProfesores() {
-		return misProfesores;
-	}
-
-	public void setMisProfesores(ArrayList<Profesor> misProfesores) {
-		this.misProfesores = misProfesores;
-	}
-
-	public ArrayList<Estudiante> getMisEstudiantes() {
-		return misEstudiantes;
-	}
-
-	public void setMisEstudiantes(ArrayList<Estudiante> misEstudiantes) {
-		this.misEstudiantes = misEstudiantes;
-	}
-
-	public Facultad getMiFacultad() {
-		return miFacultad;
-	}
-
-	public void setMiFacultad(Facultad miFacultad) {
-		this.miFacultad = miFacultad;
-	}
-
+	/**
+	 * @return the nombre
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+	/**
+	 * @param nombre the nombre to set
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * @return the ubicacion
+	 */
 	public String getUbicacion() {
 		return ubicacion;
 	}
 
+	/**
+	 * @param ubicacion the ubicacion to set
+	 */
 	public void setUbicacion(String ubicacion) {
 		this.ubicacion = ubicacion;
 	}
 
+	/**
+	 * @return the numero
+	 */
 	public int getNumero() {
 		return numero;
 	}
 
+	/**
+	 * @param numero the numero to set
+	 */
 	public void setNumero(int numero) {
 		this.numero = numero;
+	}
+
+	/**
+	 * @return the misCursos
+	 */
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	/**
+	 * @param misCursos the misCursos to set
+	 */
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
+	}
+
+	/**
+	 * @return the misProfesores
+	 */
+	public ArrayList<Profesor> getMisProfesores() {
+		return misProfesores;
+	}
+
+	/**
+	 * @param misProfesores the misProfesores to set
+	 */
+	public void setMisProfesores(ArrayList<Profesor> misProfesores) {
+		this.misProfesores = misProfesores;
+	}
+
+	/**
+	 * @return the misEstudiantes
+	 */
+	public ArrayList<Estudiante> getMisEstudiantes() {
+		return misEstudiantes;
+	}
+
+	/**
+	 * @param misEstudiantes the misEstudiantes to set
+	 */
+	public void setMisEstudiantes(ArrayList<Estudiante> misEstudiantes) {
+		this.misEstudiantes = misEstudiantes;
+	}
+
+	/**
+	 * @return the miFacultad
+	 */
+	public Facultad getMiFacultad() {
+		return miFacultad;
+	}
+
+	/**
+	 * @param miFacultad the miFacultad to set
+	 */
+	public void setMiFacultad(Facultad miFacultad) {
+		this.miFacultad = miFacultad;
 	}
 
 	@Override

@@ -7,19 +7,21 @@ import java.util.ArrayList;
 
 import modelo.Facultad;
 
-/**
- * @author braya
- *
- */
 public class CreacionFacultad {
 	
 	public ArrayList<Facultad> misFacultades;
 	
+	/**
+	 * Constructor de la clase 
+	 */
 	public CreacionFacultad() {
 		misFacultades = new ArrayList<Facultad>();
 		crearFacultades();
 	}
 	
+	/**
+	 * Metodo que nos ayuda a crear las facultades y agregarlas a un ArrayList
+	 */
 	public void crearFacultades() {
 		Facultad f1 = new Facultad("Ingenieria", 5, null, null, 100, 4, 400);
 		Facultad f2 = new Facultad("Medicina", 6, null, null, 150, 4, 400);

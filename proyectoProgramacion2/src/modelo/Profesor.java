@@ -5,10 +5,6 @@ package modelo;
 
 import java.util.ArrayList;
 
-/**
- * @author braya
- *
- */
 public class Profesor extends Persona {
 	public String especialidad;
 	public ArrayList<Curso> misCursos;
@@ -47,22 +43,6 @@ public class Profesor extends Persona {
 
 	}
 
-	public ArrayList<Curso> getMisCursos() {
-		return misCursos;
-	}
-
-	public void setMisCursos(ArrayList<Curso> misCursos) {
-		this.misCursos = misCursos;
-	}
-
-	public ArrayList<Salon> getMisSalones() {
-		return misSalones;
-	}
-
-	public void setMisSalones(ArrayList<Salon> misSalones) {
-		this.misSalones = misSalones;
-	}
-
 	/**
 	 * @return the especialidad
 	 */
@@ -75,6 +55,34 @@ public class Profesor extends Persona {
 	 */
 	public void setEspecialidad(String especialidad) {
 		this.especialidad = especialidad;
+	}
+
+	/**
+	 * @return the misCursos
+	 */
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	/**
+	 * @param misCursos the misCursos to set
+	 */
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
+	}
+
+	/**
+	 * @return the misSalones
+	 */
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	/**
+	 * @param misSalones the misSalones to set
+	 */
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
 	}
 
 	@Override

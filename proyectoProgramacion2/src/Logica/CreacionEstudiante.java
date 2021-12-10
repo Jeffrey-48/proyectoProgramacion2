@@ -7,19 +7,21 @@ import java.util.ArrayList;
 
 import modelo.Estudiante;
 
-/**
- * @author braya
- *
- */
 public class CreacionEstudiante {
 
 	public ArrayList<Estudiante> estudiantesInscritos;
 
+	/**
+	 * Constructor de la clase 
+	 */
 	public CreacionEstudiante() {
 		estudiantesInscritos = new ArrayList<>();
 		crearEstudiantes();
 	}
 
+	/**
+	 * Metodo usado para crear estudiantes y agregarlos a un arrayList
+	 */
 	private void crearEstudiantes() {
 		Estudiante e1 = new Estudiante("Carlos","Arturo", "ca@gmail.com", "carrera 12 numero 12",
 				"1", "3135467895", "o", "+", "01/01/2000", "masculino", "Estudiante",
@@ -43,13 +45,20 @@ public class CreacionEstudiante {
 		estudiantesInscritos.add(e5);
 	}
 
+	/**
+	 * @return the estudiantesInscritos
+	 */
 	public ArrayList<Estudiante> getEstudiantesInscritos() {
 		return estudiantesInscritos;
 	}
 
+	/**
+	 * @param estudiantesInscritos the estudiantesInscritos to set
+	 */
 	public void setEstudiantesInscritos(ArrayList<Estudiante> estudiantesInscritos) {
 		this.estudiantesInscritos = estudiantesInscritos;
 	}
+	
 	
 	
 }

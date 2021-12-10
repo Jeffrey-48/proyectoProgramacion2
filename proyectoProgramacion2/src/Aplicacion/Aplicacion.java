@@ -5,10 +5,6 @@ package Aplicacion;
 
 import Logica.Principal;
 
-/**
- * @author braya
- *
- */
 public class Aplicacion {
 
 	/**

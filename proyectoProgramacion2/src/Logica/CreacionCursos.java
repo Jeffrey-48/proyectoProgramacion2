@@ -13,6 +13,9 @@ public class CreacionCursos {
 		crearCursos();
 	}
 
+	/**
+	 * Metodo que sirve para crear los cursos y agregarlos a un ArrayList
+	 */
 	public void crearCursos() {
 		Curso c1 = new Curso("Fundamentos de Algoritmia", 3, "001", null, null, null);
 		Curso c2 = new Curso("Programación I", 3, "002", null, null, null);
@@ -38,12 +41,18 @@ public class CreacionCursos {
 
 	}
 
+	/**
+	 * @return the misCursos
+	 */
 	public ArrayList<Curso> getMisCursos() {
 		return misCursos;
 	}
 
+	/**
+	 * @param misCursos the misCursos to set
+	 */
 	public void setMisCursos(ArrayList<Curso> misCursos) {
 		this.misCursos = misCursos;
 	}
-
+	
 }
