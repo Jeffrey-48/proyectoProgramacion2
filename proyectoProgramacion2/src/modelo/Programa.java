@@ -3,6 +3,8 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  * @author braya
  *
@@ -12,20 +14,40 @@ public class Programa {
 	public String nombre;
 	public int creditos;
 	public int numeroEstudiantesRegistrados;
+	public ArrayList<Curso> misCursos;
+	
 	/**
 	 * @param nombre
 	 * @param creditos
 	 * @param numeroEstudiantesRegistrados
 	 */
-	public Programa(String nombre, int creditos, int numeroEstudiantesRegistrados) {
+
+	public Programa() {
+		
+	}
+
+	/**
+	 * @param nombre
+	 * @param creditos
+	 * @param numeroEstudiantesRegistrados
+	 * @param misCursos
+	 */
+	public Programa(String nombre, int creditos, int numeroEstudiantesRegistrados, ArrayList<Curso> misCursos) {
 		super();
 		this.nombre = nombre;
 		this.creditos = creditos;
 		this.numeroEstudiantesRegistrados = numeroEstudiantesRegistrados;
+		this.misCursos = misCursos;
 	}
 	
-	public Programa() {
-		
+	
+
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
 	}
 
 	/**
@@ -73,9 +95,7 @@ public class Programa {
 	@Override
 	public String toString() {
 		return "Programa [nombre=" + nombre + ", creditos=" + creditos + ", numeroEstudiantesRegistrados="
-				+ numeroEstudiantesRegistrados + "]";
+				+ numeroEstudiantesRegistrados + ", misCursos=" + misCursos + "]";
 	}
-	
-	
 
 }

@@ -3,26 +3,47 @@
  */
 package modelo;
 
-/**
- * @author braya
- *
- */
-public class Facultad {
-	
+import java.util.ArrayList;
+
+public class Facultad extends Edificacion {
+
 	public String nombre;
 	public int numeroProgramas;
+	public ArrayList<Programa> misProgramas;
+	public ArrayList<Salon> misSalones;
+
 	/**
 	 * @param nombre
 	 * @param numeroProgramas
 	 */
-	public Facultad(String nombre, int numeroProgramas) {
-		super();
-		this.nombre = nombre;
-		this.numeroProgramas = numeroProgramas;
+
+	public Facultad() {
+
 	}
 
-	public Facultad(){
-		
+	public ArrayList<Programa> getMisProgramas() {
+		return misProgramas;
+	}
+
+	public void setMisProgramas(ArrayList<Programa> misProgramas) {
+		this.misProgramas = misProgramas;
+	}
+
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
+	}
+
+	public Facultad(String nombre, int numeroProgramas, ArrayList<Programa> misProgramas, ArrayList<Salon> misSalones,
+			double metrosCuadrados, int numeroPisos, int numeroSalones) {
+		super(metrosCuadrados, numeroPisos, numeroSalones);
+		this.nombre = nombre;
+		this.numeroProgramas = numeroProgramas;
+		this.misProgramas = misProgramas;
+		this.misSalones = misSalones;
 	}
 
 	/**
@@ -55,8 +76,8 @@ public class Facultad {
 
 	@Override
 	public String toString() {
-		return "Facultad [nombre=" + nombre + ", numeroProgramas=" + numeroProgramas + "]";
+		return "Facultad [nombre=" + nombre + ", numeroProgramas=" + numeroProgramas + ", misProgramas=" + misProgramas
+				+ ", misSalones=" + misSalones + "]";
 	}
-	
-	
+
 }

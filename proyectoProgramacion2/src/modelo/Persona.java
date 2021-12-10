@@ -3,10 +3,6 @@
  */
 package modelo;
 
-/**
- * @author braya
- *
- */
 public class Persona {
 	public String nombre;
 	public String apellido;
@@ -19,8 +15,7 @@ public class Persona {
 	public String fechaNacimiento;
 	public String genero;
 	public String tipoVinculacion;
-	
-	
+
 	/**
 	 * @param nombre
 	 * @param apellido
@@ -49,10 +44,9 @@ public class Persona {
 		this.genero = genero;
 		this.tipoVinculacion = tipoVinculacion;
 	}
-	
-	public Persona()
-	{
-		
+
+	public Persona() {
+
 	}
 
 	public String getNombre() {
@@ -150,7 +144,5 @@ public class Persona {
 				+ tipoSangre + ", rh=" + rh + ", fechaNacimiento=" + fechaNacimiento + ", genero=" + genero
 				+ ", tipoVinculacion=" + tipoVinculacion + "]";
 	}
-	
-	
 
 }

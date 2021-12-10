@@ -3,14 +3,23 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  * @author braya
  *
  */
-public class Estudiante extends Persona{
+public class Estudiante extends Persona {
 
 	public int semestre;
 	public int codigoEstudiante;
+	public ArrayList<Salon> misSalones;
+	public ArrayList<Curso> misCursos;
+
+	public Estudiante() {
+
+	}
+
 	/**
 	 * @param nombre
 	 * @param apellido
@@ -25,19 +34,35 @@ public class Estudiante extends Persona{
 	 * @param tipoVinculacion
 	 * @param semestre
 	 * @param codigoEstudiante
+	 * @param misSalones
+	 * @param misCursos
 	 */
 	public Estudiante(String nombre, String apellido, String correo, String direccion, String identificador,
 			String telefono, String tipoSangre, String rh, String fechaNacimiento, String genero,
-			String tipoVinculacion, int semestre, int codigoEstudiante) {
+			String tipoVinculacion, int semestre, int codigoEstudiante, ArrayList<Salon> misSalones,
+			ArrayList<Curso> misCursos) {
 		super(nombre, apellido, correo, direccion, identificador, telefono, tipoSangre, rh, fechaNacimiento, genero,
 				tipoVinculacion);
 		this.semestre = semestre;
 		this.codigoEstudiante = codigoEstudiante;
+		this.misSalones = misSalones;
+		this.misCursos = misCursos;
 	}
-	
-	public Estudiante()
-	{
-		
+
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
+	}
+
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
 	}
 
 	/**
@@ -70,10 +95,8 @@ public class Estudiante extends Persona{
 
 	@Override
 	public String toString() {
-		return "Estudiante [semestre=" + semestre + ", codigoEstudiante=" + codigoEstudiante + "]";
+		return "Estudiante [semestre=" + semestre + ", codigoEstudiante=" + codigoEstudiante + ", misSalones="
+				+ misSalones + ", misCursos=" + misCursos + "]";
 	}
-	
-	
-	
-	
+
 }

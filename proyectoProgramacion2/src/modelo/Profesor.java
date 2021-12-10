@@ -3,12 +3,16 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  * @author braya
  *
  */
-public class Profesor extends Persona{
+public class Profesor extends Persona {
 	public String especialidad;
+	public ArrayList<Curso> misCursos;
+	public ArrayList<Salon> misSalones;
 
 	/**
 	 * @param nombre
@@ -23,21 +27,40 @@ public class Profesor extends Persona{
 	 * @param genero
 	 * @param tipoVinculacion
 	 * @param especialidad
+	 * @param misCursos
+	 * @param misSalones
 	 */
 	public Profesor(String nombre, String apellido, String correo, String direccion, String identificador,
 			String telefono, String tipoSangre, String rh, String fechaNacimiento, String genero,
-			String tipoVinculacion, String especialidad) {
+			String tipoVinculacion, String especialidad, ArrayList<Curso> misCursos, ArrayList<Salon> misSalones) {
 		super(nombre, apellido, correo, direccion, identificador, telefono, tipoSangre, rh, fechaNacimiento, genero,
 				tipoVinculacion);
 		this.especialidad = especialidad;
+		this.misCursos = misCursos;
+		this.misSalones = misSalones;
 	}
-	
+
 	/**
 	 * 
 	 */
-	public Profesor()
-	{
-		
+	public Profesor() {
+
+	}
+
+	public ArrayList<Curso> getMisCursos() {
+		return misCursos;
+	}
+
+	public void setMisCursos(ArrayList<Curso> misCursos) {
+		this.misCursos = misCursos;
+	}
+
+	public ArrayList<Salon> getMisSalones() {
+		return misSalones;
+	}
+
+	public void setMisSalones(ArrayList<Salon> misSalones) {
+		this.misSalones = misSalones;
 	}
 
 	/**
@@ -56,9 +79,8 @@ public class Profesor extends Persona{
 
 	@Override
 	public String toString() {
-		return "Profesor [especialidad=" + especialidad + "]";
+		return "Profesor [especialidad=" + especialidad + ", misCursos=" + misCursos + ", misSalones=" + misSalones
+				+ "]";
 	}
-	
-	
 
 }
