@@ -35,5 +35,21 @@ public class CreacionProfesor {
 		misProfesores.add(p5);
 	}
 
+	/**
+	 * @return the misProfesores
+	 */
+	public ArrayList<Profesor> getMisProfesores() {
+		return misProfesores;
+	}
+
+	/**
+	 * @param misProfesores the misProfesores to set
+	 */
+	public void setMisProfesores(ArrayList<Profesor> misProfesores) {
+		this.misProfesores = misProfesores;
+	}
+	
+	
+
 
 }
