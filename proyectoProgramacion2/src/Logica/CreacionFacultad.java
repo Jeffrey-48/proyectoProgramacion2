@@ -34,4 +34,20 @@ public class CreacionFacultad {
 		misFacultades.add(f5);
 	}
 
+	/**
+	 * @return the misFacultades
+	 */
+	public ArrayList<Facultad> getMisFacultades() {
+		return misFacultades;
+	}
+
+	/**
+	 * @param misFacultades the misFacultades to set
+	 */
+	public void setMisFacultades(ArrayList<Facultad> misFacultades) {
+		this.misFacultades = misFacultades;
+	}
+	
+	
+
 }
