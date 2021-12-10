@@ -69,6 +69,12 @@ public class Programa {
 	public void setNumeroEstudiantesRegistrados(int numeroEstudiantesRegistrados) {
 		this.numeroEstudiantesRegistrados = numeroEstudiantesRegistrados;
 	}
+
+	@Override
+	public String toString() {
+		return "Programa [nombre=" + nombre + ", creditos=" + creditos + ", numeroEstudiantesRegistrados="
+				+ numeroEstudiantesRegistrados + "]";
+	}
 	
 	
 

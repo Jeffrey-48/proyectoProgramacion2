@@ -67,6 +67,11 @@ public class Estudiante extends Persona{
 	public void setCodigoEstudiante(int codigoEstudiante) {
 		this.codigoEstudiante = codigoEstudiante;
 	}
+
+	@Override
+	public String toString() {
+		return "Estudiante [semestre=" + semestre + ", codigoEstudiante=" + codigoEstudiante + "]";
+	}
 	
 	
 	

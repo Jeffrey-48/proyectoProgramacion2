@@ -142,6 +142,14 @@ public class Persona {
 	public void setTipoVinculacion(String tipoVinculacion) {
 		this.tipoVinculacion = tipoVinculacion;
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", correo=" + correo + ", direccion="
+				+ direccion + ", identificador=" + identificador + ", telefono=" + telefono + ", tipoSangre="
+				+ tipoSangre + ", rh=" + rh + ", fechaNacimiento=" + fechaNacimiento + ", genero=" + genero
+				+ ", tipoVinculacion=" + tipoVinculacion + "]";
+	}
 	
 	
 

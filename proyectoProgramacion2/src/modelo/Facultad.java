@@ -52,6 +52,11 @@ public class Facultad {
 	public void setNumeroProgramas(int numeroProgramas) {
 		this.numeroProgramas = numeroProgramas;
 	}
+
+	@Override
+	public String toString() {
+		return "Facultad [nombre=" + nombre + ", numeroProgramas=" + numeroProgramas + "]";
+	}
 	
 	
 }
